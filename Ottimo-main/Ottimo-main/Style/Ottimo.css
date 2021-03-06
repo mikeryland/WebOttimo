@@ -1,0 +1,222 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #ffcc99;
+}
+
+.background {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  padding: 30px;
+  text-decoration: none;
+  display: flex;
+  background-color: black;
+}
+
+.header .logo {
+  padding: 25px;
+  flex: 1;
+  background-color: black;
+}
+
+#logopic {
+  width: 206.05px;
+  height: 70.35px;
+}
+
+.header .navbar {
+  padding: 20px;
+  text-align: right;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffcc99;
+  padding: 20px 20px;
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  color: white;
+  padding: 20px;
+}
+
+.navbar.responsive a {
+  position: relative;
+  background-color: grey;
+  color: #ffcc99;
+  display: block;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+#menuspan {
+  display: none;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+.leftfooter {
+  color: #ffcc99;
+  background-color: black;
+  flex: 1;
+}
+
+.rightfooter {
+  color: #ffcc99;
+  background-color: black;
+  flex: 0.1;
+}
+
+.ContactData {
+  padding: 100px;
+  color: #ffcc99;
+  text-align: center;
+}
+
+.product {
+  text-align: center;
+  color: #ffcc99;
+  background-color: black;
+  padding: 10px;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#prodimg {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnproduct {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+  padding: 20px 20px 20px 20px;
+  margin: 0px;
+  margin-left: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border-radius: 8px;
+  display: block;
+  border-style: hidden;
+}
+
+#text {
+  color: #ffcc99;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aboutus {
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
+  text-indent: 40px;
+}
+
+#auimg {
+  width: 400px;
+  height: 214.5px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  position: relative;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1450px) {
+  .columnproduct {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    margin-left: 0px;
+    height: 300px;
+    display: block;
+    border-radius: 0;
+  }
+
+  #prodimg {
+    width: 150px;
+    height: 150px;
+    border-style: hidden;
+    border-radius: 8px;
+  }
+
+  .header .navbar {
+    right: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    flex: 1;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar a {
+    display: none;
+  }
+
+  #menuspan {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    float: right;
+    cursor: pointer;
+  }
+  .contactdatalist {
+    size: 100px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #logo {
+    width: 103.025px;
+    height: 35.175px;
+  }
+  #menuspan {
+    display: block;
+    padding: 0px 5px 5px 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    float: right;
+  }
+
+  .header .navbar {
+    right: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    flex: 1;
+    text-align: right;
+  }
+}
